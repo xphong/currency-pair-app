@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import styles from './index.css';
-
-const App = () => {
-  return <div className={styles.container}>Hello World</div>;
-};
+import App from './components/App/App';
 
 ReactDOM.render(<App />, document.getElementById('root'));

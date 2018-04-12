@@ -8,7 +8,7 @@ module.exports = {
     "<rootDir>/tests/coverage"
   ],
   coverageDirectory: "<rootDir>/tests/coverage",
-  collectCoverageFrom: ["**/*.js"],
+  collectCoverageFrom: ["src/**/*.js"],
   snapshotSerializers: ["enzyme-to-json/serializer"],
   moduleNameMapper: {
     '\\.(css)': 'identity-obj-proxy',

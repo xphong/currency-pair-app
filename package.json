@@ -1,0 +1,7 @@
+{
+  "name": "currency-pair-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Phong Huynh <xphong@gmail.com>",
+  "license": "MIT"
+}

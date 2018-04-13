@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component should render Input 1`] = `
+<input
+  className="input"
+  type="text"
+/>
+`;
+
+exports[`Input Component should render Input with props 1`] = `
+<input
+  className="input"
+  name="Kakarot"
+  type="text"
+  value="Goku"
+/>
+`;
+
+exports[`Input Component should render Input with type number 1`] = `
+<input
+  className="input"
+  type="number"
+/>
+`;

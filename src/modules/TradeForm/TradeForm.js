@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import TextInput from '../../components/TextInput/TextInput';
+import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 
 export class TradeFormContainer extends Component {
@@ -21,11 +21,11 @@ export class TradeFormContainer extends Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <h2>Trade</h2>
-          <TextInput disabled value="USD" />
-          <TextInput placeholder="Enter your amount" name="amount" />
+          <Input type="text" disabled value="USD" />
+          <Input type="number" placeholder="Enter your amount" name="amount" />
           <h2>For</h2>
-          <TextInput disabled value="BTC" />
-          <TextInput disabled />
+          <Input type="text" disabled value="BTC" />
+          <Input type="text" disabled />
           <Button handleOnClick={this.handleSubmit}>
             Trade
           </Button>

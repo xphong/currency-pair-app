@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { WalletContainer } from './Wallet';
+import { WalletContainer, mapStateToProps } from "./Wallet";
 
 describe('Wallet Container', () => {
   it('should render Wallet', () => {
@@ -13,5 +13,26 @@ describe('Wallet Container', () => {
     const wrapper = shallow(<WalletContainer {...props} />);
 
     expect(wrapper).toMatchSnapshot();
+  });
+
+  // In practice, trivial actions are probably not worth testing
+  test('Wallet mapStateToProps()', () => {
+    const wallet = {
+      balance: {
+        USD: 9000,
+        BTC: 0
+      }
+    };
+    const state = {
+      wallet
+    };
+
+    const expectedProps = {
+      balance: wallet.balance,
+    };
+
+    const props = mapStateToProps(state);
+
+    expect(props).toMatchObject(expectedProps);
   });
 });

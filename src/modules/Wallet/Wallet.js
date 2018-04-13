@@ -20,7 +20,7 @@ export class WalletContainer extends Component {
   }
 }
 
-const mapStateToProps = state => {
+export const mapStateToProps = state => {
   return {
     balance: state.wallet.balance
   };

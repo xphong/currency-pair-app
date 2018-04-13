@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component should render Button 1`] = `
+<button
+  className="button"
+/>
+`;
+
+exports[`Button Component should render Button with handleOnClick 1`] = `
+<button
+  className="button"
+>
+  It's over 9000!!
+</button>
+`;

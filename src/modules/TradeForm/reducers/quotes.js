@@ -16,7 +16,7 @@ const quotes = (state = INITIAL_STATE, action = null) => {
         bitcoin: action.payload.data,
         error: true
       });
-    case types.RETRIEVE_QUOTE:
+    case types.RECEIVE_QUOTE:
       return Object.assign({}, state, {
         isLoading: false,
         bitcoin: action.payload.data,

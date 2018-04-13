@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App Container should render App 1`] = `<Connect(WalletContainer) />`;
+exports[`App Container should render App 1`] = `
+<div
+  className="container"
+>
+  <Connect(WalletContainer) />
+</div>
+`;

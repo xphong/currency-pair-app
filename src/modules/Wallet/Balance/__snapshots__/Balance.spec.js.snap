@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Balance Component should render account balance 1`] = `
+<div>
+  <h2>
+    Account Balance
+  </h2>
+  <ul
+    className="list"
+  >
+    <li
+      key="USD"
+    >
+      <span
+        className="currency"
+      >
+        USD
+      </span>
+       
+      1
+    </li>
+    <li
+      key="BTC"
+    >
+      <span
+        className="currency"
+      >
+        BTC
+      </span>
+       
+      0
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Balance Component should render error message if no balance found 1`] = `
+<div>
+  Unable to retrieve account balance
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wallet Container should render Wallet 1`] = `
+<div>
+  <Balance
+    balance={
+      Object {
+        "BTC": 0,
+        "USD": 1,
+      }
+    }
+  />
+</div>
+`;

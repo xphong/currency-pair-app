@@ -4,8 +4,8 @@ const INITIAL_STATE = {
   isLoading: false,
   error: false,
   balance: {
-    dollar: 156.12,
-    bitcoin: 0
+    USD: 156.12,
+    BTC: 0
   }
 };
 
@@ -16,13 +16,13 @@ const wallet = (state = INITIAL_STATE, action = null) => {
     case types.TRADE_ERROR:
       return Object.assign({}, state, {
         isLoading: false,
-        data: action.payload.data,
+        balance: action.payload.balance,
         error: true
       });
     case types.COMPLETE_TRADE:
       return Object.assign({}, state, {
         isLoading: false,
-        balance: action.payload.data,
+        balance: action.payload.balance,
         error: false
       });
     default:

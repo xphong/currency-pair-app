@@ -2,9 +2,13 @@ import React from 'react';
 
 import Wallet from '../../modules/Wallet/Wallet';
 
+import styles from './App.css';
+
 const App = () => {
   return (
-    <Wallet />
+    <div className={styles.container}>
+      <Wallet />
+    </div>
   );
 };
 

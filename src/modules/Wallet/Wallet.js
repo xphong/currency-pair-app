@@ -2,9 +2,11 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Balance from './Balance/Balance';
+
 export class WalletContainer extends Component {
   static propTypes = {
-    balance: PropTypes.object.isRequired,
+    balance: PropTypes.object
   };
 
   render() {
@@ -12,7 +14,7 @@ export class WalletContainer extends Component {
 
     return (
       <div>
-        $$$${balance.dollar}
+        <Balance balance={balance} />
       </div>
     );
   }

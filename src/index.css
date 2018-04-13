@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 body {
   background:#fff;
   padding: 20px;
@@ -8,4 +14,5 @@ h2 {
   margin: 0;
   font-size: 14px;
   font-weight: normal;
+  padding-left: 12px;
 }

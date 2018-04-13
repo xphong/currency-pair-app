@@ -5,5 +5,6 @@ exports[`App Container should render App 1`] = `
   className="container"
 >
   <Connect(WalletContainer) />
+  <Connect(TradeFormContainer) />
 </div>
 `;

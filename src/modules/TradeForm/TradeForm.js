@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from "redux";
 
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
+import { fetchBitcoinQuote } from './actions/quotes';
 
 export class TradeFormContainer extends Component {
   static propTypes = {
     balance: PropTypes.object
   };
+
+  handleGetQuote = () => {
+    this.props.fetchQuote();
+  }
 
   handleSubmit = event => {
     event.preventDefault();
@@ -41,6 +47,11 @@ export const mapStateToProps = state => {
   };
 }
 
+export const mapDispatchToProps = dispatch => {
+  return { fetchQuote: bindActionCreators(fetchBitcoinQuote, dispatch) };
+}
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(TradeFormContainer);

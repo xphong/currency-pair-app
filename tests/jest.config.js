@@ -9,7 +9,8 @@ module.exports = {
   ],
   coveragePathIgnorePatterns: [
     '/src/store/',
-    '/src/index.js'
+    '/src/index.js',
+    '/src/reducers/index.js'
   ],
   coverageDirectory: "<rootDir>/tests/coverage",
   collectCoverageFrom: ["src/**/*.js"],

@@ -3,6 +3,7 @@ import * as types from '../../actions/wallet/types';
 const INITIAL_STATE = {
   isLoading: false,
   error: false,
+  errorMessage: '',
   balance: {
     USD: 156.12,
     BTC: 0
@@ -16,10 +17,10 @@ const wallet = (state = INITIAL_STATE, action = null) => {
     case types.TRADE_ERROR:
       return Object.assign({}, state, {
         isLoading: false,
-        balance: action.payload.balance,
+        errorMessage: action.payload.errorMessage,
         error: true
       });
-    case types.COMPLETE_TRADE:
+    case types.RECEIVE_TRADE:
       return Object.assign({}, state, {
         isLoading: false,
         balance: action.payload.balance,

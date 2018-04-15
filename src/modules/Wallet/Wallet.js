@@ -6,7 +6,10 @@ import Balance from './Balance/Balance';
 
 export class WalletContainer extends Component {
   static propTypes = {
-    balance: PropTypes.object
+    balance: PropTypes.shape({
+      USD: PropTypes.number.isRequired,
+      BTC: PropTypes.number.isRequired
+    })
   };
 
   render() {

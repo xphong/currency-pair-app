@@ -5,6 +5,8 @@ import { bindActionCreators } from "redux";
 
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import SuccessMessage from '../../components/SuccessMessage/SuccessMessage';
 import { fetchBitcoinQuote } from './actions/quotes';
 import { trade } from '../../actions/wallet/wallet';
 
@@ -58,6 +60,8 @@ export class TradeFormContainer extends Component {
           <Button handleOnClick={this.handleSubmit}>
             Trade
           </Button>
+          {this.props.tradeError ? <ErrorMessage>{this.props.tradeError}</ErrorMessage> : ''}
+          {this.props.tradeSuccess ? <SuccessMessage>Transaction completed</SuccessMessage> : ''}
         </form>
       </div>
     );
@@ -67,7 +71,9 @@ export class TradeFormContainer extends Component {
 export const mapStateToProps = state => {
   return {
     balance: state.wallet.balance,
-    quote: state.quotes.bitcoin
+    quote: state.quotes.bitcoin,
+    tradeError: state.wallet.error,
+    tradeSuccess: state.wallet.success
   };
 }
 

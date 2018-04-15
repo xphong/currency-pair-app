@@ -17,11 +17,11 @@ export const receiveTrade = balance => {
   };
 }
 
-export const receiveError = errorMessage => {
+export const receiveError = error => {
   return {
     type: types.TRADE_ERROR,
     payload: {
-      errorMessage
+      error
     }
   };
 }

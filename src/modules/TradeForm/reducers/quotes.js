@@ -13,8 +13,7 @@ const quotes = (state = INITIAL_STATE, action = null) => {
     case types.QUOTE_ERROR:
       return Object.assign({}, state, {
         isLoading: false,
-        bitcoin: action.payload.data,
-        error: true
+        error: action.payload.error
       });
     case types.RECEIVE_QUOTE:
       return Object.assign({}, state, {

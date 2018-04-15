@@ -2,8 +2,8 @@
 
 exports[`Quotes Reducer should handle QUOTE_ERROR 1`] = `
 Object {
-  "bitcoin": Object {},
-  "error": true,
+  "bitcoin": 0,
+  "error": undefined,
   "isLoading": false,
 }
 `;

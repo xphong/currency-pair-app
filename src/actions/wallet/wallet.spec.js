@@ -14,7 +14,7 @@ const store = configureMockStore({
 
 describe('Wallet Actions', () => {
   beforeEach(() => {
-      store.clearActions();
+    store.clearActions();
   });
 
   describe('trade', () => {

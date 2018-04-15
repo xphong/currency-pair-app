@@ -17,16 +17,16 @@ export const receiveQuote = data => {
   };
 }
 
-export const receiveError = data => {
+export const receiveError = error => {
   return {
     type: types.QUOTE_ERROR,
     payload: {
-      data
+      error
     }
   };
 }
 
-export const fetchBitcoinQuote = name => {
+export const fetchBitcoinQuote = () => {
   const url = 'https://api.bitfinex.com/v1/pubticker/btcusd';
   const opts = {
     url,

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wallet Reducer should handle RECEIVE_TRADE 1`] = `
+Object {
+  "balance": Object {
+    "BTC": 0.9,
+    "USD": 50,
+  },
+  "error": false,
+  "isLoading": false,
+  "success": true,
+}
+`;
+
+exports[`Wallet Reducer should handle REQUEST_TRADE 1`] = `
+Object {
+  "balance": Object {
+    "BTC": 0,
+    "USD": 156.12,
+  },
+  "error": false,
+  "isLoading": true,
+  "success": false,
+}
+`;
+
+exports[`Wallet Reducer should handle TRADE_ERROR 1`] = `
+Object {
+  "balance": Object {
+    "BTC": 0,
+    "USD": 156.12,
+  },
+  "error": "Insuccifient funds",
+  "isLoading": false,
+  "success": false,
+}
+`;
+
+exports[`Wallet Reducer should return initial state 1`] = `
+Object {
+  "balance": Object {
+    "BTC": 0,
+    "USD": 156.12,
+  },
+  "error": false,
+  "isLoading": false,
+  "success": false,
+}
+`;

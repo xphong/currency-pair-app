@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quotes Reducer should handle QUOTE_ERROR 1`] = `
+Object {
+  "bitcoin": Object {},
+  "error": true,
+  "isLoading": false,
+}
+`;
+
+exports[`Quotes Reducer should handle RECEIVE_QUOTE 1`] = `
+Object {
+  "bitcoin": "8288.9",
+  "error": false,
+  "isLoading": false,
+}
+`;
+
+exports[`Quotes Reducer should handle REQUEST_QUOTE 1`] = `
+Object {
+  "bitcoin": 0,
+  "error": false,
+  "isLoading": true,
+}
+`;
+
+exports[`Quotes Reducer should return initial state 1`] = `
+Object {
+  "bitcoin": 0,
+  "error": false,
+  "isLoading": false,
+}
+`;

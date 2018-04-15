@@ -7,6 +7,7 @@ import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import SuccessMessage from '../../components/SuccessMessage/SuccessMessage';
+import Spinner from '../../components/Spinner/Spinner';
 import { fetchBitcoinQuote } from './actions/quotes';
 import { trade } from '../../actions/wallet/wallet';
 
@@ -62,6 +63,7 @@ export class TradeFormContainer extends Component {
           </Button>
           {this.props.tradeError ? <ErrorMessage>{this.props.tradeError}</ErrorMessage> : ''}
           {this.props.tradeSuccess ? <SuccessMessage>Transaction completed</SuccessMessage> : ''}
+          {this.props.tradeLoading ? <Spinner /> : ''}
         </form>
       </div>
     );
@@ -73,7 +75,8 @@ export const mapStateToProps = state => {
     balance: state.wallet.balance,
     quote: state.quotes.bitcoin,
     tradeError: state.wallet.error,
-    tradeSuccess: state.wallet.success
+    tradeSuccess: state.wallet.success,
+    tradeLoading: state.wallet.isLoading
   };
 }
 

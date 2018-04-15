@@ -13,7 +13,7 @@ import { trade } from '../../actions/wallet/wallet';
 
 export class TradeFormContainer extends Component {
   static propTypes = {
-    balance: PropTypes.object
+    quote: PropTypes.number.isRequired
   };
 
   constructor() {
@@ -72,7 +72,6 @@ export class TradeFormContainer extends Component {
 
 export const mapStateToProps = state => {
   return {
-    balance: state.wallet.balance,
     quote: state.quotes.bitcoin,
     tradeError: state.wallet.error,
     tradeSuccess: state.wallet.success,

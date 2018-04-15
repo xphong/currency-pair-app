@@ -41,7 +41,7 @@ export const fetchBitcoinQuote = name => {
     try {
       const { data } = await axios(opts);
 
-      dispatch(receiveQuote(data.last_price));
+      dispatch(receiveQuote(Number(data.last_price)));
     } catch (e) {
       dispatch(receiveError(e));
     }

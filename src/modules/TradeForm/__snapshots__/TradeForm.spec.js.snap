@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TradeForm Container should render TradeForm 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <h2>
+      Trade
+    </h2>
+    <Input
+      disabled={true}
+      type="text"
+      value="USD"
+    />
+    <Input
+      name="amount"
+      onChange={[Function]}
+      placeholder="Enter your amount"
+      type="number"
+    />
+    <h2>
+      For
+    </h2>
+    <Input
+      disabled={true}
+      type="text"
+      value="BTC"
+    />
+    <Input
+      disabled={true}
+      name="quoteAmount"
+      type="text"
+      value=""
+    />
+    <Button
+      handleOnClick={[Function]}
+    >
+      Trade
+    </Button>
+  </form>
+</div>
+`;

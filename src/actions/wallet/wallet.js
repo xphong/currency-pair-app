@@ -27,14 +27,13 @@ export const receiveError = error => {
 }
 
 export const trade = (amount, quoteAmount) => {
-
   return async (dispatch, getState) => {
     const { wallet } = getState();
     const usdBalance = wallet.balance.USD;
     const btcBalance = wallet.balance.BTC;
 
     if (!amount || !quoteAmount) {
-      dispatch(receiveError('Please enter a trade amount'));
+      dispatch(receiveError('Please enter a trade amount.'));
       return;
     }
 

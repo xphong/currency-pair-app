@@ -57,7 +57,7 @@ describe('Wallet Actions', () => {
       expect(actions[0]).toEqual({
         type: types.TRADE_ERROR,
         payload: {
-          error: "You have insufficient funds in your account."
+          error: 'You have insufficient funds in your account.'
         }
       });
 

@@ -2,7 +2,7 @@
 
 exports[`Spinner Component should render Spinner 1`] = `
 <div
-  className="loading"
+  className="loadingFull"
 >
   Loading…
 </div>

@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './ErrorMessage.css';
 
-const ErrorMessage = props => {
+const ErrorMessage = ({ children }) => {
   return (
     <div className={styles.error}>
-      {props.children}
+      {children}
     </div>
   );
 };

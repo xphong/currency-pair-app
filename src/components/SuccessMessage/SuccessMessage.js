@@ -2,10 +2,10 @@ import React from 'react';
 
 import styles from './SuccessMessage.css';
 
-const SuccessMessage = props => {
+const SuccessMessage = ({ children }) => {
   return (
     <div className={styles.success}>
-      {props.children}
+      {children}
     </div>
   );
 };

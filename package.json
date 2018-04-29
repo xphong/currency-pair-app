@@ -8,7 +8,9 @@
     "lint": "eslint src",
     "test": "jest --config ./tests/jest.config.js",
     "test:watch": "jest --watch --config ./tests/jest.config.js",
-    "test:coverage": "jest --coverage --config ./tests/jest.config.js"
+    "test:coverage": "jest --coverage --config ./tests/jest.config.js",
+    "style": "npx styleguidist server",
+    "style:build": "npx styleguidist build"
   },
   "author": "Phong Huynh <xphong@gmail.com>",
   "license": "MIT",
@@ -36,6 +38,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.3",
     "moxios": "^0.4.0",
+    "react-styleguidist": "^7.0.8",
     "redux-devtools-extension": "^2.13.2",
     "style-loader": "^0.20.3",
     "webpack": "^4.5.0",

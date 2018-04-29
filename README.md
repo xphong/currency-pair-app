@@ -18,3 +18,5 @@ yarn install
 * Run lint: `yarn lint`
 
 * Run tests: `yarn test`
+
+* Run style guide: `yarn style`

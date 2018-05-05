@@ -1,4 +1,4 @@
-import * as types from '../actions/types';
+import * as types from 'modules/TradeForm/actions/types';
 import quotesReducer from './quotes';
 
 describe('Quotes Reducer', () => {

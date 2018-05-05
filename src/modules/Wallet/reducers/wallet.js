@@ -1,4 +1,4 @@
-import * as types from '../actions/types';
+import * as types from 'modules/Wallet/actions/types';
 
 const INITIAL_STATE = {
   isLoading: false,

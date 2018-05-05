@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import wallet from './wallet/wallet';
+import wallet from '../modules/Wallet/reducers/wallet';
 import quotes from '../modules/TradeForm/reducers/quotes';
 
 const rootReducer = combineReducers({

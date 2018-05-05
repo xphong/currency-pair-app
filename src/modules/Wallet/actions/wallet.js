@@ -1,6 +1,6 @@
 import * as types from './types';
 
-import delay from '../../utils/delay/delay';
+import delay from '../../../utils/delay/delay';
 
 export const requestTrade = () => {
   return {

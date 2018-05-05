@@ -9,7 +9,7 @@ import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
 import SuccessMessage from '../../components/SuccessMessage/SuccessMessage';
 import Spinner from '../../components/Spinner/Spinner';
 import { fetchBitcoinQuote } from './actions/quotes';
-import { trade } from '../../actions/wallet/wallet';
+import { trade } from '../Wallet/actions/wallet';
 
 export class TradeFormContainer extends Component {
   static propTypes = {

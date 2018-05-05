@@ -4,5 +4,10 @@
     "shallow": true,
     "mount": true,
     "render": true
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
   }
 }

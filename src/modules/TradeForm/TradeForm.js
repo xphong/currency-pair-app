@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import Input from 'components/Input/Input';
-import Button from 'components/Button/Button';
-import ErrorMessage from 'components/ErrorMessage/ErrorMessage';
-import SuccessMessage from 'components/SuccessMessage/SuccessMessage';
-import Spinner from 'components/Spinner/Spinner';
+import Input from '../../components/Input/Input';
+import Button from '../../components/Button/Button';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import SuccessMessage from '../../components/SuccessMessage/SuccessMessage';
+import Spinner from '../../components/Spinner/Spinner';
 import { fetchBitcoinQuote } from './actions/quotes';
 import { trade } from 'modules/Wallet/actions/wallet';
 

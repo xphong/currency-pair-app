@@ -1,9 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styles from './Button.css';
 
-const Button = props => {
+type ButtonProps = {
+  handleOnClick: () => void;
+  children: React.ReactNode;
+}
+
+const Button = (props: ButtonProps) => {
   const { handleOnClick, children } = props;
 
   return (
@@ -11,10 +15,6 @@ const Button = props => {
       {children}
     </button>
   );
-};
-
-Button.propTypes = {
-  handleOnClick: PropTypes.func
 };
 
 export default Button;
